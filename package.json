@@ -1,5 +1,5 @@
 {
-  "name": "Rails5-ActionCable-Redux-React-ChatAppExample",
+  "name": "Rails5-ActionCable-Redux-React-ChatAppExample-Dockerized",
   "version": "1.0.0",
   "description": "== README",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wclittle/Rails5-ActionCable-Redux-React-ChatAppExample.git"
+    "url": "https://github.com/mlwilkerson/Rails5-ActionCable-Redux-React-ChatAppExample-Dockerized"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wclittle/Rails5-ActionCable-Redux-React-ChatAppExample/issues"
+    "url": "https://github.com/mlwilkerson/Rails5-ActionCable-Redux-React-ChatAppExample-Dockerized/issues"
   },
-  "homepage": "https://github.com/wclittle/Rails5-ActionCable-Redux-React-ChatAppExample",
+  "homepage": "https://github.com/mlwilkerson/Rails5-ActionCable-Redux-React-ChatAppExample-Dockerized",
   "devDependencies": {
     "babel-loader": "^6.2.5",
     "bourbon-neat": "^1.8.0",
