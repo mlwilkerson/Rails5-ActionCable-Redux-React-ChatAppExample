@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '>= 5.0.0.rc1', '< 5.1'
+gem 'rails', '>= 5.0.0.1', '< 5.1'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
@@ -36,10 +36,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'puma'
 
 # React for view components
-gem 'react-rails', '~> 1.5.0'
+gem 'react-rails', '~> 1.8.2'
 
 # browserify-rails for
-gem 'browserify-rails', '1.5.0'
+gem 'browserify-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
