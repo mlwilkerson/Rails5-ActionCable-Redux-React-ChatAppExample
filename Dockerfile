@@ -8,4 +8,10 @@ ADD Gemfile.lock /chatapp/Gemfile.lock
 ADD package.json /chatapp/package.json
 RUN bundle install
 RUN npm install
+
+# The following two seem to be redundant, but without this hack node_modules/.bin/browserifyinc 
+# is not generated and we get errors in the browser at runtime
+RUN npm install browserify
+RUN npm install browserify-incremental
+
 #ADD . /chatapp
