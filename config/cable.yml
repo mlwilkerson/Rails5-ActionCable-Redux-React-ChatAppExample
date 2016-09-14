@@ -3,7 +3,7 @@ production:
   url: <%= ENV['REDISTOGO_URL'] %>
 
 development:
-  url: redis://localhost:6379/2
+  url: redis://redis:6379/2
 
 test:
-  url: redis://localhost:6379/3
+  url: redis://redis:6379/3

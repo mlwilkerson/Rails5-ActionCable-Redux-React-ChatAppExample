@@ -18,3 +18,7 @@
 /node_modules
 /config/database.yml
 /webpack_dist
+
+
+# RubyMine IDE
+.idea/
