@@ -29,10 +29,11 @@ Anyway, diving right into the setup (I'm assuming you are familiar with Rails/Ja
 * run `docker-compose up` (to fire up everything)
 
 * OPTIONAL: Grab the [Redux dev tools Chrome exention](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
-* Fire up your Rails server via `rails s` and point your web browser to `http://localhost:3000`
+
+* point your web browser to `http://localhost:3000`
 * *The first time* you load the app, browserify-rails will do some caching, so give it a few seconds to load.
 * Try opening two browsers side-by-side and see the web socket (via Action Cable) do its thing as you submit messages.
-* For more rapid development with HMR with your react components, fire up the webpack server via `npm start`
+* For more rapid development with HMR with your react components, fire up the webpack server via `npm start` [Untested in this Dockerized version]
 
 That's it for now!
 
