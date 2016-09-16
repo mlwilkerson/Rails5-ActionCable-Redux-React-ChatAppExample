@@ -25,6 +25,8 @@ RUN bundle install
 # Build the node dependencies from that same parent directory.
 ADD package.json /app/package.json
 
+RUN npm install
+
 WORKDIR /app/repo
 
 # Since we'll be mounting the Git repo under /app/repo, let's call that out here

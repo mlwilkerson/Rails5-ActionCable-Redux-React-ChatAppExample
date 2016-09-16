@@ -12,5 +12,8 @@ module Chatapp
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.browserify_rails.commandline_options = '-t babelify'
+
+    # node_modules will have been pre-built in the parent directory, which is inside the Docker container
+    config.browserify_rails.node_bin = "../node_modules/.bin"
   end
 end
