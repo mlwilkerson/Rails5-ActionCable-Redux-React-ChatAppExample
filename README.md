@@ -21,12 +21,15 @@ If you're curious to learn more, I posted some background/motivation and a code 
 Anyway, diving right into the setup (I'm assuming you are familiar with Rails/JavaScript):
 
 * Make sure you have Docker and Compose installed
-* Clone this repo
-* run `docker-compose build` 
-* run `docker-compose run web rails db:create`
-* run `rails db:migrate`
-* run `rails db:seed` (to add a quick "Hello World" message into the database)
-* run `docker-compose up` (to fire up everything)
+* Clone this repo and run the following in order:
+* `docker-compose build` 
+* `docker-compose run web npm install` (builds npm modules _from_ the container _into_ a node_modules subdirectory in your repo's subdirectory—_outside_ the container)
+        * NOTE: Preferably, these node modules would be built into the container too. However, it seems that without some further configuration magic, node has been unable to consistently 
+        find the modules at run time unless they are built like this in the normal local way. 
+* `docker-compose run web rails db:create`
+* `rails db:migrate`
+* `rails db:seed` (to add a quick "Hello World" message into the database)
+* `docker-compose up` (to fire up everything)
 
 * OPTIONAL: Grab the [Redux dev tools Chrome exention](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 
